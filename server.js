@@ -2,11 +2,12 @@ require('dotenv').config();
 
 const express = require('express');
 const cors = require('cors');
-const connectDb = require('./config/mongodb'); // Make sure this path is correct
-const connectCloudinary=require('./config/clodinary')
+const connectDb = require('./backend/config/mongodb');
+const connectCloudinary = require('./backend/config/clodinary');
 
 
-const adminRoutes = require('./routes/adminRoutes'); // Make sure this path is correct
+
+const adminRoutes = require('./backend/routes/adminRoutes'); // Make sure this path is correct
 // --- APP CONFIG ---
 const app = express();
 
