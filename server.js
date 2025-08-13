@@ -2,9 +2,9 @@ require('dotenv').config();
 
 const express = require('express');
 const cors = require('cors');
-const connectDb = require('./config/mongodb'); // MongoDB connection
-const connectCloudinary = require('./config/clodinary'); // Cloudinary connection
-const adminRoutes = require('./routes/adminRoutes'); // Admin routes
+const connectDb = require('./backend/config/mongodb'); // MongoDB connection
+const connectCloudinary = require('./backend/config/clodinary'); // Cloudinary connection
+const adminRoutes = require('./backend/routes/adminRoutes'); // Admin routes
 
 // --- APP CONFIG ---
 const app = express();
